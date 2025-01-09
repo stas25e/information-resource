@@ -1,1 +1,1 @@
-React, Redux-Toolkit, Typescript, SCSS, CSS Modules, Feature-Sliced Design, Lazy-load, i18n, 
+React, Redux-Toolkit, Typescript, Feature-Sliced Design, SCSS, CSS Modules, Lazy-load, i18n,
