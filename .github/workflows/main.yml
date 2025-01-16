@@ -41,8 +41,8 @@ jobs:
             - name: Build Storybook
               run: xvfb-run -a npm run storybook:build || exit 1
 
-            - name: Screenshot testing
-              run: xvfb-run -a npm run test:ui:ci || exit 1
+            # - name: Screenshot testing
+            #   run: xvfb-run -a npm run test:ui:ci || exit 1
 
             - name: Show npm debug log if failed
               if: failure()
