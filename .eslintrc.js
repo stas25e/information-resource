@@ -8,7 +8,6 @@ module.exports = {
         'plugin:react/recommended',
         'airbnb',
         'plugin:i18next/recommended',
-        'plugin:storybook/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -18,7 +17,11 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['react', '@typescript-eslint', 'i18next'],
+    plugins: [
+        'react',
+        '@typescript-eslint',
+        'i18next',
+    ],
     rules: {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
@@ -52,11 +55,9 @@ module.exports = {
     },
     overrides: [
         {
-            files: ['**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)'],
+            files: ['**/src/**/*.test.{ts,tsx}'],
             rules: {
                 'i18next/no-literal-string': 'off',
-                'storybook/hierarchy-separator': 'error',
-                'storybook/default-exports': 'off',
             },
         },
     ],
