@@ -1,0 +1,8 @@
+!.storybook
+
+export default [
+
+  {
+    ignores: ['!.storybook'],
+  },
+]
