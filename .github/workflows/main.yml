@@ -28,15 +28,18 @@ jobs:
 
             - name: Build production project
               run: npm run build:prod || exit 1
-
+              if: always()
             - name: Linting TypeScript
               run: npm run lint:ts || exit 1
+              if: always()
 
             - name: Linting SCSS
               run: npm run lint:scss || exit 1
+              if: always()
 
             - name: Unit testing
               run: npm run test:unit || exit 1
+              if: always()
 
             - name: Build Storybook
               run: xvfb-run -a npm run storybook:build || exit 1
