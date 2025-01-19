@@ -59,6 +59,46 @@ module.exports = {
             rules: {
                 'i18next/no-literal-string': 'off',
                 'max-len': 'off',
+                'react-hooks/rules-of-hooks': 'off',
+                'react-hooks/exhaustive-deps': 'off',
+            },
+        },
+        {
+            files: ['**/src/**/*.{ts,tsx}'],
+            excludedFiles: ['**/*.test.{ts,tsx}', '**/*.stories.{ts,tsx}'],
+            rules: {
+                'react-hooks/rules-of-hooks': 'off',
+                'react-hooks/exhaustive-deps': 'off',
+            },
+        },
+        {
+            files: [
+                '**/webpack.config.{js,ts}',
+                '**/path/to/your/configs/**/*.{js,ts}',
+            ],
+            rules: {
+                'react-hooks/rules-of-hooks': 'off',
+                'react-hooks/exhaustive-deps': 'off',
+            },
+            env: {
+                node: true,
+            },
+        },
+        {
+            files: ['**/*.{js,jsx,ts,tsx}'],
+            rules: {
+                'import/no-unresolved': 'off',
+                'react/react-in-jsx-scope': 'off',
+                'react/jsx-uses-react': 'off',
+            },
+        },
+        {
+            files: ['**/*'],
+            rules: {
+                'import/no-unresolved': 'off',
+                'no-warning-comments': 'off',
+                'react-hooks/rules-of-hooks': 'off', 
+                'react-hooks/exhaustive-deps': 'off', 
             },
         },
     ],

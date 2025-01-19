@@ -15,8 +15,10 @@ const App = () => {
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
                 <Navbar />
-                <Button onClick={() => setIsOpen(true)}>toggle</Button>
-               
+                <Button onClick={() => setIsOpen(true)}>
+                    1/2
+                </Button>
+
                 <div className="content-page">
                     <Sidebar />
                     <AppRouter />
