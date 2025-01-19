@@ -49,6 +49,7 @@ module.exports = {
         'jsx-a11y/click-events-have-key-events': 'off',
         'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
         'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
+        'no-param-reassign': 'off',
     },
     globals: {
         __IS_DEV__: true,
@@ -97,8 +98,8 @@ module.exports = {
             rules: {
                 'import/no-unresolved': 'off',
                 'no-warning-comments': 'off',
-                'react-hooks/rules-of-hooks': 'off', 
-                'react-hooks/exhaustive-deps': 'off', 
+                'react-hooks/rules-of-hooks': 'off',
+                'react-hooks/exhaustive-deps': 'off',
             },
         },
     ],
